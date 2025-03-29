@@ -1,69 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM Layout</title>
-</head>
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8f9fa;">
+@extends('layouts.app')
 
-    <!-- Header -->
-    <div style="background: #2c3e50; color: white; text-align: center; padding: 15px;">
-        <nav style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
-            <a href="/home.blade.php" style="color: white; font-size: 24px; font-weight: bold; text-decoration: none;">CRM</a>
-            <ul style="display: flex; gap: 20px; list-style: none; padding: 0; margin: 0;">
-                <li><a href="/home" style="color: white; text-decoration: none; font-size: 16px; padding: 10px; border-radius: 5px;">Home</a></li>
-                <li><a href="/about" style="color: white; text-decoration: none; font-size: 16px; padding: 10px; border-radius: 5px;">About</a></li>
-                <li><a href="/contact" style="color: white; text-decoration: none; font-size: 16px; padding: 10px; border-radius: 5px;">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
+@section('content')
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h1 class="card-title display-4">Welcome to CRM System</h1>
+                        <p class="lead">The all-in-one solution for managing your customer relationships.</p>
+                        <hr>
+                        <p>Our CRM system helps you streamline your business processes and improve customer relations with powerful tools and features.</p>
+                        <a href="/dashboard" class="btn btn-primary">Go to Dashboard</a>
+                    </div>
+                </div>
 
-    <!-- Content Wrapper -->
-    <div style="display: flex; min-height: 100vh;">
-
-        <!-- Sidebar -->
-        <div style="background-color: #2c3e50; color: white; width: 220px; padding: 20px;">
-            <ul style="list-style: none; padding: 0;">
-                <li><a href="/dash" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Dashboard</a></li>
-                <li><a href="/admin" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Admin</a></li>
-                <li><a href="/leads" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Leads Management</a></li>
-                <li><a href="/sales" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Sales Management</a></li>
-                <li><a href="/client" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Clients & Contacts</a></li>
-                <li><a href="/tasks" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Tasks & Activities</a></li>
-                <li><a href="#" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">Invoices & Payments</a></li>
-                <li><a href="#" style="display: block; color: white; text-decoration: none; padding: 10px; border-radius: 5px;">User & Team Management</a></li>
-            </ul>
-        </div>
-
-        <!-- Main Panel -->
-        <div style="
-            flex: 1;
-            padding: 30px;
-            min-height: 100vh;
-            background-image: url('/assets/crm_image.jpeg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-             ">
-            <main style="padding: 15px; text-align: center;">
-                <h2 style="color: black; font-size: 24px; margin-bottom: 20px;">Welcome to Dashboard</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-users me-2"></i>Lead Management</h5>
+                                <p class="card-text">Efficiently capture, track, and nurture leads through your sales pipeline.</p>
+                                <a href="/leads" class="btn btn-sm btn-outline-primary">Manage Leads</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-handshake me-2"></i>Client Relationships</h5>
+                                <p class="card-text">Build stronger relationships with your clients with better communication tools.</p>
+                                <a href="/client" class="btn btn-sm btn-outline-primary">View Clients</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-chart-line me-2"></i>Sales Tracking</h5>
+                                <p class="card-text">Monitor your sales performance with real-time dashboards and reports.</p>
+                                <a href="/sales" class="btn btn-sm btn-outline-primary">View Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-tasks me-2"></i>Task Management</h5>
+                                <p class="card-text">Stay organized with task management and activity tracking features.</p>
+                                <a href="/tasks" class="btn btn-sm btn-outline-primary">Manage Tasks</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Quick Stats</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>Active Leads</div>
+                            <div class="badge bg-info">#</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>Active Clients</div>
+                            <div class="badge bg-success">#</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>Pending Tasks</div>
+                            <div class="badge bg-warning">#</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>Recent Sales</div>
+                            <div class="badge bg-primary">#</div>
+                        </div>
+                    </div>
+                </div>
                 
-            </main>
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Latest Updates</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <small class="text-muted">Today</small>
+                            <div>New client registration - ABC Corp</div>
+                        </div>
+                        <div class="mb-3">
+                            <small class="text-muted">Yesterday</small>
+                            <div>Closed deal with XYZ Inc. ($15,000)</div>
+                        </div>
+                        <div>
+                            <small class="text-muted">March 25, 2023</small>
+                            <div>Updated sales forecast for Q2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-
-    <!-- Footer -->
-    <div style="background: #2c3e50; color: white; text-align: center; padding: 15px; position: relative; width: 100%;">
-        Copyright © 2025 Traincape Technology. All Rights Reserved. | Privacy Policy | Terms of Service | Support
-        <br> Powered by CRM | Designed for Efficiency & Growth
-        <br> 📧 support@ourcompany.com | 📞 +1 (123) 456-7890
-        <br> Follow us: Facebook | Twitter | LinkedIn
-    </div>
-
-</body>
-</html>
+@endsection

@@ -5,9 +5,10 @@
             <i class="fas fa-bars"></i>
         </button>
         @endauth
-        <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
-            <i class="fas fa-tasks fa-lg me-2"></i>
-            <span>CRM System</span>
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="">
+     
+            {{-- <span>CRM System</span> --}}
+        <img src="{{asset('assets/image/traincape_logo.png')}}" alt="" width="90" height="90">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

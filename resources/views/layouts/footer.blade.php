@@ -2,10 +2,12 @@
     <div class="container">
         <div class="row py-3">
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <h5 class="text-uppercase mb-4"><i class="fas fa-tasks me-2"></i>CRM System</h5>
-                <p class="small">Our CRM system helps businesses streamline operations, improve customer relationships, and boost sales performance through intuitive tools and powerful analytics.</p>
+                <h5 class="text-uppercase mb-4">About Us</h5>
+                
+
+              <p class="small">Traincape Technology's specific methodologies for measuring and prioritizing customer satisfaction. Many companies use various methods to gauge and prioritize customer satisfaction.</p>
                 <div class="mt-4">
-                    <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/people/Traincape-Technology-Pvt-Ltd/100083755432171/" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-instagram"></i></a>
@@ -32,31 +34,41 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p class="small mb-2"><i class="fas fa-home me-3"></i> 123 CRM Street, Business Park, CA 94107</p>
-                <p class="small mb-2"><i class="fas fa-envelope me-3"></i> info@crmcompany.com</p>
-                <p class="small mb-2"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                <div class="mt-4">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+                <p class="small mb-2"><i class="fas fa-home me-3"></i> Khandolia Plaza, 118\C, Dabri - Palam Rd,Vaishali, Vaishali Colony,Dashrath Puri, New Delhi, Delhi, 110045</p>
+              
+                {{-- <div class="mt-4">
                     <h6 class="text-uppercase mb-3">Subscribe to Newsletter</h6>
                     <div class="input-group">
                         <input type="email" class="form-control form-control-sm" placeholder="Your email">
                         <button class="btn btn-primary" type="button">Subscribe</button>
                     </div>
-                </div>
+                </div> --}}
             </div>
+            {{-- <div className="mx-auto px-2 md:px-10 lg:px-20 py-8 border-b border-slate-800"> --}}
         </div>
-    </div>
-    <div class="bg-primary py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="small mb-0">&copy; {{ date('Y') }} <strong>CRM System</strong>. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="/privacy" class="text-white text-decoration-none small me-3">Privacy Policy</a>
-                    <a href="/terms" class="text-white text-decoration-none small">Terms of Service</a>
-                </div>
+                {{-- <div class="bg-primary py-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start">
+                                <p class="small mb-0">&copy; {{ date('Y') }} <strong>CRM System</strong>. All rights reserved.</p>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <a href="/privacy" class="text-white text-decoration-none small me-3">Privacy Policy</a>
+                                <a href="/terms" class="text-white text-decoration-none small">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
+
+            <div class="mx-auto px-4 text-center py-3">
+              <p class="text-slate-400 text-[10px] sm:text-xs font-light">
+                Copyright © {{ date('Y') }} 
+                <span class="text-blue-800 font-normal">
+                    Traincape Technology
+                </span>
+                . All Rights Reserved.
+                </p>
             </div>
-        </div>
-    </div>
 </footer>

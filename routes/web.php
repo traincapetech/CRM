@@ -3,13 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController; // Make sure to import UserController if you're using it.
 
-
-
-
-Route::get('/', function () {
-    return view('welcome'); 
-});
-
+Route::get('/dash', function () {
+    return view('dashboard');
+})->name('dashboard');
 
 // for home pages
 Route::get('/home', function () {
@@ -42,9 +38,10 @@ Route::get('/privacy', function () {
 });
 
 // for dashboard pages
-Route::get('/dash', function () {
-    return view('pages.dashboard'); 
-});
+// Route::get('/dash', function () {
+//     return view('dashboard'); 
+// });
+
 
 // for admin pages
 Route::get('/admin', function () {
@@ -79,9 +76,6 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 Route::get('/', function () {
     return redirect('/home');
 });
-
-// Route::get('/admin', [user::class, 'index'])->middleware('role:admin');
-
 
 
 ?>
