@@ -62,19 +62,19 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>Active Leads</div>
-                            <div class="badge bg-info">#</div>
+                            <div class="badge bg-info">1</div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>Active Clients</div>
-                            <div class="badge bg-success">#</div>
+                            <div class="badge bg-success">2</div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>Pending Tasks</div>
-                            <div class="badge bg-warning">#</div>
+                            <div class="badge bg-warning">3</div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <div>Recent Sales</div>
-                            <div class="badge bg-primary">#</div>
+                            <div class="badge bg-primary">4</div>
                         </div>
                     </div>
                 </div>

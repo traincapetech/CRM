@@ -6,7 +6,7 @@
             <div class="col-lg-8">
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
-                        <h1 class="card-title display-4">Welcome to CRM System</h1>
+                        <h1 class="card-title display-4">Welcome to CRM Dashboard</h1>
                         <p class="lead">The all-in-one solution for managing your customer relationships.</p>
                         <hr>
                         <p>Our CRM system helps you streamline your business processes and improve customer relations with powerful tools and features.</p>

@@ -5,9 +5,8 @@
             <i class="fas fa-bars"></i>
         </button>
         @endauth
-        <a class="navbar-brand fw-bold d-flex align-items-center" href="">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
      
-            {{-- <span>CRM System</span> --}}
         <img src="{{asset('assets/image/traincape_logo.png')}}" alt="" width="90" height="90">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
@@ -17,12 +16,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('/') || request()->is('home') ? 'active fw-bold' : '' }}" href="/">
+                    <a class="nav-link {{ request()->is('/') || request()->is('home') ? 'active fw-bold' : '' }}" href="/home">
                         <i class="fas fa-home me-1"></i> Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('dashboard') ? 'active fw-bold' : '' }}" href="/dashboard">
+                    <a class="nav-link {{ request()->is('dashboard') ? 'active fw-bold' : '' }}" href="/dash">
                         <i class="fas fa-tachometer-alt me-1"></i> Dashboard
                     </a>
                 </li>
@@ -46,7 +45,7 @@
                         <i class="fas fa-clipboard-list me-1"></i> Tasks
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-info-circle me-1"></i> About
                     </a>
@@ -57,7 +56,7 @@
                         <li><a class="dropdown-item" href="/privacy">Privacy Policy</a></li>
                         <li><a class="dropdown-item" href="/terms">Terms of Service</a></li>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
             <div class="d-flex">
                 <form class="d-flex me-2">
@@ -73,8 +72,8 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
                         <li><h6 class="dropdown-header">User Account</h6></li>
-                        <li><a class="dropdown-item" href="/profile"><i class="fas fa-id-card me-2"></i>Profile</a></li>
-                        <li><a class="dropdown-item" href="/settings"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                        <li><a class="dropdown-item" href="/login"><i class="fas fa-id-card me-2"></i>Login</a></li>
+                        <li><a class="dropdown-item" href="/register"><i class="fas fa-cog me-2"></i>Register</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="/logout"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
                     </ul>
